@@ -1,0 +1,12 @@
+{
+  "name": "riverton-third-grade-menu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-menu": "node scripts/fetch-menu.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#101826" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="School Menu" />
+  <title>Riverton 3rd Grade Menu</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">RIVERTON ELEMENTARY</div>
+        <h1>3rd Grade Menu</h1>
+      </div>
+      <button class="icon-button" id="infoButton" aria-label="App information" title="App information">
+        <span aria-hidden="true">i</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-card" aria-labelledby="todayHeading">
+        <div class="hero-topline">
+          <div>
+            <p class="section-label" id="todayHeading">Today</p>
+            <p class="today-date" id="todayDate">—</p>
+          </div>
+          <span class="status-pill" id="statusPill">Checking…</span>
+        </div>
+
+        <div class="segmented" role="tablist" aria-label="Meal">
+          <button class="segment active" id="breakfastTab" role="tab" aria-selected="true" data-meal="breakfast">Breakfast</button>
+          <button class="segment" id="lunchTab" role="tab" aria-selected="false" data-meal="lunch">Lunch</button>
+        </div>
+
+        <div class="today-meal" id="todayMeal" aria-live="polite"></div>
+      </section>
+
+      <section class="week-section" aria-labelledby="weekHeading">
+        <div class="section-heading-row">
+          <div>
+            <p class="section-label">This week</p>
+            <h2 id="weekHeading">Weekly menu</h2>
+          </div>
+          <div class="week-range" id="weekRange">—</div>
+        </div>
+        <div class="day-list" id="dayList" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog class="info-dialog" id="infoDialog">
+    <div class="dialog-header">
+      <div>
+        <p class="section-label">Information</p>
+        <h2>Menu status</h2>
+      </div>
+      <button class="icon-button secondary" id="closeInfoButton" aria-label="Close information">×</button>
+    </div>
+
+    <div class="status-banner" id="statusBanner"></div>
+
+    <dl class="info-grid">
+      <div><dt>Status</dt><dd id="infoStatus">—</dd></div>
+      <div><dt>Last menu pulled</dt><dd id="infoPulled">—</dd></div>
+      <div><dt>Last checked</dt><dd id="infoChecked">—</dd></div>
+      <div><dt>Next scheduled update</dt><dd id="infoNextUpdate">—</dd></div>
+      <div><dt>Menu week</dt><dd id="infoWeek">—</dd></div>
+      <div><dt>App version</dt><dd id="infoVersion">—</dd></div>
+      <div class="wide"><dt>Source</dt><dd><a id="infoSource" href="https://menus.healthepro.com/organizations/1681" target="_blank" rel="noopener">USD 404 / Health-e Pro</a></dd></div>
+    </dl>
+
+    <button class="primary-button" id="refreshButton">Force refresh</button>
+    <p class="dialog-note" id="refreshMessage" aria-live="polite"></p>
+  </dialog>
+
+  <noscript>This app requires JavaScript.</noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
