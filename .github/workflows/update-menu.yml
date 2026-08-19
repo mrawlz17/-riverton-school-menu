@@ -1,1 +1,50 @@
+name: Update school menu
 
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch-menu.mjs'
+      - 'package.json'
+      - '.github/workflows/update-menu.yml'
+  schedule:
+    # 11:15 UTC = 6:15 AM Central during daylight time.
+    - cron: '15 11 * * 6'
+
+permissions:
+  contents: write
+
+jobs:
+  update-menu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Pull current menu
+        run: npm run sync-menu
+
+      - name: Commit menu if changed
+        run: |
+          if git diff --quiet -- menu-data.json sync-debug.json; then
+            echo "No menu changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add menu-data.json sync-debug.json
+          git commit -m "Update school menu"
+          git push
