@@ -1,0 +1,68 @@
+{
+  "startedAt": "2026-08-20T00:46:40.666Z",
+  "orgUrl": "https://menus.healthepro.com/organizations/1681",
+  "school": "Riverton Elementary School",
+  "targetWeek": {
+    "start": "2026-08-17",
+    "end": "2026-08-21"
+  },
+  "urls": [
+    "https://menus.healthepro.com/organizations/1681",
+    "https://menus.healthepro.com/organizations/1681",
+    "https://menus.healthepro.com/organizations/1681",
+    "https://menus.healthepro.com/organizations/1681",
+    "https://menus.healthepro.com/organizations/1681",
+    "https://menus.healthepro.com/organizations/1681"
+  ],
+  "jsonResponses": [
+    {
+      "meal": "breakfast",
+      "url": "https://menus.healthepro.com/api/organizations/1681"
+    },
+    {
+      "meal": "breakfast",
+      "url": "https://menus.healthepro.com/api/system"
+    },
+    {
+      "meal": "breakfast",
+      "url": "https://menus.healthepro.com/api/organizations/1681/sites/list"
+    },
+    {
+      "meal": "breakfast",
+      "url": "https://menus.healthepro.com/api/system"
+    },
+    {
+      "meal": "lunch",
+      "url": "https://menus.healthepro.com/api/organizations/1681"
+    },
+    {
+      "meal": "lunch",
+      "url": "https://menus.healthepro.com/api/system"
+    },
+    {
+      "meal": "lunch",
+      "url": "https://menus.healthepro.com/api/organizations/1681/sites/list"
+    },
+    {
+      "meal": "lunch",
+      "url": "https://menus.healthepro.com/api/system"
+    }
+  ],
+  "notes": [
+    "breakfast: schoolChosen=false, mealChosen=false, targetWeek=2026-08-17, final=https://menus.healthepro.com/organizations/1681",
+    "lunch: schoolChosen=false, mealChosen=false, targetWeek=2026-08-17, final=https://menus.healthepro.com/organizations/1681"
+  ],
+  "breakfastPage": {
+    "url": "https://menus.healthepro.com/organizations/1681",
+    "title": "My School Menus - Select your Site and Menu",
+    "bodyText": "Welcome! It's simple to get started:\nWhat is the name of your school? \nNo results found\nWhich menu would you like to view? \nNo results found\nGo\nPowered By Health-e Pro\n\nTerms of Service | Privacy Policy | Accessibility | © 2026\n\nRiverton USD 404\n\nBox 290, Riverton, Kansas, 66770 — 620-848-3386 Ext 149",
+    "candidates": []
+  },
+  "lunchPage": {
+    "url": "https://menus.healthepro.com/organizations/1681",
+    "title": "My School Menus - Select your Site and Menu",
+    "bodyText": "Welcome! It's simple to get started:\nWhat is the name of your school? \nNo results found\nWhich menu would you like to view? \nNo results found\nGo\nPowered By Health-e Pro\n\nTerms of Service | Privacy Policy | Accessibility | © 2026\n\nRiverton USD 404\n\nBox 290, Riverton, Kansas, 66770 — 620-848-3386 Ext 149",
+    "candidates": []
+  },
+  "error": "Error: Health-e Pro loaded, but no current-week menu entries could be parsed.\n    at file:///home/runner/work/-riverton-school-menu/-riverton-school-menu/scripts/fetch-menu.mjs:705:11"
+}
