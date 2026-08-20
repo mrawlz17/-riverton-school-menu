@@ -160,21 +160,27 @@ function parseDayBlock(lines, meal) {
 
 function parseMenuPage(bodyText, meal) {
   const lines = String(bodyText ?? '').split(/\n/).map(clean).filter(Boolean);
-  const anchors = [];
+  const allAnchors = [];
 
+  // Capture EVERY dated menu block on the page, not only the target week.
+  // That way Friday stops at the following Monday instead of consuming
+  // the rest of the month/page footer.
   for (let i = 0; i < lines.length; i++) {
     const date = parseFullDate(lines[i]);
-    if (date && date >= weekStart && date <= weekEnd) anchors.push({ index: i, date });
+    if (date) allAnchors.push({ index: i, date });
   }
 
   const records = [];
-  for (let a = 0; a < anchors.length; a++) {
-    const start = anchors[a].index + 1;
-    const end = a + 1 < anchors.length ? anchors[a + 1].index : lines.length;
+  for (let a = 0; a < allAnchors.length; a++) {
+    const anchor = allAnchors[a];
+    if (anchor.date < weekStart || anchor.date > weekEnd) continue;
+
+    const start = anchor.index + 1;
+    const end = a + 1 < allAnchors.length ? allAnchors[a + 1].index : lines.length;
     const parsed = parseDayBlock(lines.slice(start, end), meal);
 
     if (parsed.sections.length || parsed.note) {
-      records.push({ date: anchors[a].date, ...parsed });
+      records.push({ date: anchor.date, ...parsed });
     }
   }
 
