@@ -1,4 +1,4 @@
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.1.1';
 const DATA_URL = 'menu-data.json';
 const SOURCE_URL = 'https://menus.healthepro.com/organizations/1681';
 const CACHE_KEY = 'riverton-menu:last-good:v2';
@@ -194,15 +194,28 @@ function legacySections(day) {
   return sections.filter(section => section.items.length);
 }
 
+function cleanChoiceWords(category, items = []) {
+  const isMain = ['Breakfast Entree', 'Lunch Entree', 'Entree', 'Pizzeria', 'Alternate Choices'].includes(category);
+  if (!isMain) return items;
+
+  return items
+    .filter(item => !/^(choice of|or)$/i.test(item))
+    .map(item => item.replace(/\s+or$/i, '').trim())
+    .filter(Boolean);
+}
+
 function normalizeMeal(day) {
   if (!day) return null;
 
   let sections = Array.isArray(day.sections)
     ? day.sections.map(section => ({
         category: section.category,
-        items: mergeWith(section.items || [])
+        items: cleanChoiceWords(section.category, mergeWith(section.items || []))
       })).filter(section => section.category && section.items.length)
-    : legacySections(day);
+    : legacySections(day).map(section => ({
+        ...section,
+        items: cleanChoiceWords(section.category, section.items)
+      }));
 
   const garbage = sections.length === 0 && /Month|Select Language|Dietary Preferences/i.test(`${day.title || ''} ${(day.items || []).join(' ')}`);
   if (garbage) return { ...day, title: 'No menu listed', items: [], sections: [], note: 'No breakfast menu could be read for this day.' };

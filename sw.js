@@ -1,4 +1,4 @@
-const CACHE = 'riverton-menu-app-v1.1.0';
+const CACHE = 'riverton-menu-app-v1.1.1';
 const APP_SHELL = [
   './',
   './index.html',
