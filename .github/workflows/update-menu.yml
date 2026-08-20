@@ -29,8 +29,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      # The menu only needs to be pulled on the Saturday schedule
-      # or when we manually run this workflow.
       - name: Setup Node
         if: github.event_name != 'push'
         uses: actions/setup-node@v6
@@ -45,33 +43,55 @@ jobs:
         if: github.event_name != 'push'
         run: npx playwright install --with-deps chromium
 
+      # Let the workflow continue even if Health-e Pro cannot be parsed.
+      # The scraper writes sync-debug.json before exiting.
       - name: Pull current school menu
+        id: menu_sync
         if: github.event_name != 'push'
+        continue-on-error: true
         run: npm run sync-menu
 
-      - name: Save updated menu to repository
+      # Save both successful menu updates and failure diagnostics.
+      - name: Save menu data and diagnostics
         if: github.event_name != 'push'
         run: |
           if [ -z "$(git status --porcelain -- menu-data.json sync-debug.json)" ]; then
-            echo "No menu changes."
+            echo "No menu or diagnostic changes."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -- menu-data.json sync-debug.json
-            git commit -m "Update school menu"
+
+            git add -- menu-data.json
+
+            if [ -f sync-debug.json ]; then
+              git add -- sync-debug.json
+            fi
+
+            git commit -m "Update school menu sync data"
             git push
+          fi
+
+      - name: Report menu sync result
+        if: github.event_name != 'push'
+        run: |
+          if [ "${{ steps.menu_sync.outcome }}" = "failure" ]; then
+            echo "::warning::Menu sync failed. sync-debug.json was saved for diagnosis."
+          else
+            echo "Menu sync completed successfully."
           fi
 
       - name: Build Pages site
         run: |
           rm -rf _site
           mkdir -p _site
+
           cp index.html _site/
           cp app.js _site/
           cp styles.css _site/
           cp sw.js _site/
           cp manifest.webmanifest _site/
           cp menu-data.json _site/
+
           cp -r assets _site/assets
 
       - name: Setup Pages
