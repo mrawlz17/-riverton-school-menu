@@ -1,50 +1,96 @@
-name: Update school menu
+name: Update school menu and deploy
 
 on:
   workflow_dispatch:
+
   push:
-    branches: [main]
-    paths:
-      - 'scripts/fetch-menu.mjs'
-      - 'package.json'
-      - '.github/workflows/update-menu.yml'
+    branches:
+      - main
+
   schedule:
-    # 11:15 UTC = 6:15 AM Central during daylight time.
-    - cron: '15 11 * * 6'
+    # Every Saturday morning
+    - cron: '0 13 * * 6'
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  update-menu:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
+      # The menu only needs to be pulled on the Saturday schedule
+      # or when we manually run this workflow.
       - name: Setup Node
-        uses: actions/setup-node@v4
+        if: github.event_name != 'push'
+        uses: actions/setup-node@v6
         with:
           node-version: 22
 
       - name: Install dependencies
+        if: github.event_name != 'push'
         run: npm install --no-audit --no-fund
 
       - name: Install Chromium
+        if: github.event_name != 'push'
         run: npx playwright install --with-deps chromium
 
-      - name: Pull current menu
+      - name: Pull current school menu
+        if: github.event_name != 'push'
         run: npm run sync-menu
 
-      - name: Commit menu if changed
+      - name: Save updated menu to repository
+        if: github.event_name != 'push'
         run: |
-          if git diff --quiet -- menu-data.json sync-debug.json; then
+          if [ -z "$(git status --porcelain -- menu-data.json sync-debug.json)" ]; then
             echo "No menu changes."
-            exit 0
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -- menu-data.json sync-debug.json
+            git commit -m "Update school menu"
+            git push
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add menu-data.json sync-debug.json
-          git commit -m "Update school menu"
-          git push
+
+      - name: Build Pages site
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp index.html _site/
+          cp app.js _site/
+          cp styles.css _site/
+          cp sw.js _site/
+          cp manifest.webmanifest _site/
+          cp menu-data.json _site/
+          cp -r assets _site/assets
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
