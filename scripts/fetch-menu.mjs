@@ -47,13 +47,19 @@ const debug = {
   startedAt: now.toISOString(),
   orgUrl: ORG_URL,
   school: SCHOOL,
+  targetWeek: {
+    start: weekStart,
+    end: weekEnd
+  },
   urls: [],
   jsonResponses: [],
   notes: []
 };
 
 function clean(s) {
-  return String(s ?? '').replace(/\s+/g, ' ').trim();
+  return String(s ?? '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function uniq(items) {
@@ -84,6 +90,7 @@ async function chooseSchool(page) {
 
     try {
       const options = await sel.locator('option').allTextContents();
+
       const idx = options.findIndex(t =>
         /Riverton Elementary/i.test(t)
       );
@@ -106,21 +113,26 @@ async function chooseSchool(page) {
 
       const meta =
         `${await input.getAttribute('placeholder') || ''} ` +
-        `${await input.getAttribute('aria-label') || ''}`;
+        `${await input.getAttribute('aria-label') || ''} ` +
+        `${await input.getAttribute('name') || ''}`;
 
       if (/school|site|location|name/i.test(meta)) {
         await input.fill('Riverton Elementary');
-        await page.waitForTimeout(700);
+        await page.waitForTimeout(1000);
 
-        if (
-          await clickFirst(page, [
-            page.getByText(SCHOOL, { exact: true }),
-            page.getByText(/Riverton Elementary/i),
-            page.locator('[role="option"]').filter({
-              hasText: /Riverton Elementary/i
-            })
-          ])
-        ) {
+        const picked = await clickFirst(page, [
+          page.getByRole('option', {
+            name: /Riverton Elementary/i
+          }),
+          page.locator('[role="option"]').filter({
+            hasText: /Riverton Elementary/i
+          }),
+          page.getByText(SCHOOL, { exact: true }),
+          page.getByText(/Riverton Elementary/i)
+        ]);
+
+        if (picked) {
+          await page.waitForTimeout(800);
           return true;
         }
       }
@@ -132,12 +144,17 @@ async function chooseSchool(page) {
     page.getByText(/Riverton Elementary/i),
     page.getByRole('button', {
       name: /Riverton Elementary/i
+    }),
+    page.getByRole('option', {
+      name: /Riverton Elementary/i
     })
   ]);
 }
 
 async function chooseMeal(page, meal) {
   const re = new RegExp(meal, 'i');
+
+  // First try normal select elements.
   const selects = page.locator('select');
 
   for (let i = 0; i < await selects.count(); i++) {
@@ -155,9 +172,45 @@ async function chooseMeal(page, meal) {
     } catch {}
   }
 
+  // Health-e Pro currently uses a searchable Menu input.
+  const inputs = page.locator('input');
+
+  for (let i = 0; i < await inputs.count(); i++) {
+    const input = inputs.nth(i);
+
+    try {
+      if (!await input.isVisible()) continue;
+
+      const meta =
+        `${await input.getAttribute('placeholder') || ''} ` +
+        `${await input.getAttribute('aria-label') || ''} ` +
+        `${await input.getAttribute('name') || ''}`;
+
+      if (/menu|meal/i.test(meta)) {
+        await input.fill(meal);
+        await page.waitForTimeout(1000);
+
+        const picked = await clickFirst(page, [
+          page.getByRole('option', { name: re }),
+          page.locator('[role="option"]').filter({
+            hasText: re
+          }),
+          page.getByText(re)
+        ]);
+
+        if (picked) {
+          await page.waitForTimeout(800);
+          return true;
+        }
+      }
+    } catch {}
+  }
+
+  // Final fallback.
   return clickFirst(page, [
     page.getByRole('link', { name: re }),
     page.getByRole('button', { name: re }),
+    page.getByRole('option', { name: re }),
     page.getByText(re)
   ]);
 }
@@ -167,7 +220,8 @@ async function maybeSubmit(page) {
     page.getByRole('button', { name: /^go$/i }),
     page.getByRole('button', { name: /view menu/i }),
     page.getByRole('button', { name: /continue/i }),
-    page.getByRole('button', { name: /submit/i })
+    page.getByRole('button', { name: /submit/i }),
+    page.getByRole('button', { name: /search/i })
   ]);
 }
 
@@ -207,8 +261,7 @@ function dateFromText(
 
   if (named) {
     const d = new Date(
-      `${named[1]} ${named[2]}, ` +
-      `${named[3] || fallbackYear} 12:00:00`
+      `${named[1]} ${named[2]}, ${named[3] || fallbackYear} 12:00:00`
     );
 
     if (!Number.isNaN(d.getTime())) {
@@ -240,6 +293,8 @@ async function extractFromDom(page) {
       'time[datetime]',
       '[class*="day"]',
       '[class*="date"]',
+      '[class*="calendar"]',
+      '[class*="menu"]',
       'article',
       '[role="listitem"]',
       'li'
@@ -248,9 +303,7 @@ async function extractFromDom(page) {
     const seen = new Set();
 
     for (const selector of selectors) {
-      for (
-        const el of document.querySelectorAll(selector)
-      ) {
+      for (const el of document.querySelectorAll(selector)) {
         const text =
           (el.innerText || el.textContent || '')
             .replace(/\r/g, '')
@@ -260,7 +313,7 @@ async function extractFromDom(page) {
 
         if (
           !text ||
-          text.length > 1800 ||
+          text.length > 2200 ||
           !dateish.test(text)
         ) {
           continue;
@@ -337,8 +390,7 @@ function recordsFromDom(raw) {
   for (const r of records) {
     if (
       !byDate.has(r.date) ||
-      r.items.length >
-        byDate.get(r.date).items.length
+      r.items.length > byDate.get(r.date).items.length
     ) {
       byDate.set(r.date, r);
     }
@@ -388,17 +440,14 @@ function recordsFromJson(
   const recs = [];
 
   for (const payload of jsonPayloads) {
-    const strings =
-      recursiveStrings(payload.body);
+    const strings = recursiveStrings(payload.body);
 
-    const dated =
-      strings.filter(s =>
-        dateFromText(s.value)
-      );
+    const dated = strings.filter(s =>
+      dateFromText(s.value)
+    );
 
     for (const d of dated) {
-      const date =
-        dateFromText(d.value);
+      const date = dateFromText(d.value);
 
       if (
         !date ||
@@ -455,8 +504,7 @@ function recordsFromJson(
   for (const r of recs) {
     if (
       !byDate.has(r.date) ||
-      r.items.length >
-        byDate.get(r.date).items.length
+      r.items.length > byDate.get(r.date).items.length
     ) {
       byDate.set(r.date, r);
     }
@@ -484,14 +532,12 @@ async function scrapeMeal(
     'response',
     async response => {
       const type =
-        response.headers()['content-type'] ||
-        '';
+        response.headers()['content-type'] || '';
 
       if (!type.includes('json')) return;
 
       try {
-        const body =
-          await response.json();
+        const body = await response.json();
 
         jsonPayloads.push({
           url: response.url(),
@@ -518,19 +564,19 @@ async function scrapeMeal(
     }
   );
 
-  await page.waitForTimeout(2200);
+  await page.waitForTimeout(2500);
 
   const schoolChosen =
     await chooseSchool(page);
 
   await maybeSubmit(page);
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(1200);
 
   const mealChosen =
     await chooseMeal(page, meal);
 
   await maybeSubmit(page);
-  await page.waitForTimeout(1500);
+  await page.waitForTimeout(1800);
 
   try {
     const selected =
@@ -559,7 +605,7 @@ async function scrapeMeal(
         }
       );
 
-      await page.waitForTimeout(2200);
+      await page.waitForTimeout(2500);
     }
   } catch {}
 
@@ -578,9 +624,9 @@ async function scrapeMeal(
     url: raw.url,
     title: raw.title,
     bodyText:
-      raw.bodyText.slice(0, 16000),
+      raw.bodyText.slice(0, 20000),
     candidates:
-      raw.candidates.slice(0, 100)
+      raw.candidates.slice(0, 120)
   };
 
   debug.jsonResponses.push(
@@ -677,7 +723,7 @@ if (error) {
       debug,
       null,
       2
-    )
+    ) + '\n'
   );
 
   if (
@@ -720,17 +766,25 @@ const data = {
   schemaVersion: 1,
   generatedAt:
     new Date().toISOString(),
+
   weekStart,
   weekEnd,
 
   source: {
     district:
       'Riverton USD 404',
-    school: SCHOOL,
-    grade: '3rd Grade',
+
+    school:
+      SCHOOL,
+
+    grade:
+      '3rd Grade',
+
     provider:
       'Health-e Pro / My School Menus',
-    url: ORG_URL
+
+    url:
+      ORG_URL
   },
 
   breakfast,
@@ -738,6 +792,7 @@ const data = {
 
   sync: {
     status: 'ok',
+
     message:
       `Pulled ${breakfast.length} breakfast day(s) and ` +
       `${lunch.length} lunch day(s).`
