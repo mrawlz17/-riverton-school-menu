@@ -1,19 +1,240 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "weekStart": null,
-  "weekEnd": null,
+  "generatedAt": "2026-08-20T01:17:22.439Z",
+  "weekStart": "2026-08-17",
+  "weekEnd": "2026-08-21",
   "source": {
     "district": "Riverton USD 404",
     "school": "Riverton Elementary School",
+    "sourceSite": "Riverton K-12",
     "grade": "3rd Grade",
     "provider": "Health-e Pro / My School Menus",
     "url": "https://menus.healthepro.com/organizations/1681"
   },
-  "breakfast": [],
-  "lunch": [],
+  "breakfast": [
+    {
+      "date": "2026-08-17",
+      "title": "17",
+      "items": [
+        "Breakfast Entree",
+        "• Mini French Toast",
+        "• Nutri-Grain Bar",
+        "• Strawberry Poptart",
+        "• Cinnamon Toast Crunch Cereal Bar",
+        "• Assorted Cereal",
+        "Fruit",
+        "Fresh Fruit",
+        "Assorted 100% Fruit Juice",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Misc.",
+        "Yogurt"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "title": "18",
+      "items": [
+        "Breakfast Entree",
+        "• Egg, Bacon, and Cheese Bagel🐖",
+        "• Nutri-Grain Bar",
+        "• Strawberry Poptart",
+        "• Cinnamon Toast Crunch Cereal Bar",
+        "• Assorted Cereal",
+        "Fruit",
+        "Chilled Fruit",
+        "Assorted 100% Fruit Juice",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Misc.",
+        "Mozzarella Cheese Stick"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "title": "19",
+      "items": [
+        "Breakfast Entree",
+        "• Cheesy Egg-a-Muffin🐖",
+        "• Nutri-Grain Bar",
+        "• Strawberry Poptart",
+        "• Cinnamon Toast Crunch Cereal Bar",
+        "• Assorted Cereal",
+        "Fruit",
+        "Fresh Fruit",
+        "Assorted 100% Fruit Juice",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Misc.",
+        "Mozzarella Cheese Stick"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Month",
+      "items": [
+        "Week",
+        "Build a Meal",
+        "Dietary Preferences",
+        "Select Language",
+        "Abkhaz",
+        "Acehnese",
+        "Acholi",
+        "Afar",
+        "Afrikaans",
+        "Albanian",
+        "Alur",
+        "Amharic",
+        "Arabic",
+        "Armenian",
+        "Assamese",
+        "Avar",
+        "Awadhi"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "title": "21",
+      "items": [
+        "Breakfast Entree",
+        "• Chicken Biscuit",
+        "• Nutri-Grain Bar",
+        "• Strawberry Poptart",
+        "• Cinnamon Toast Crunch Cereal Bar",
+        "• Assorted Cereal",
+        "Fruit",
+        "Fresh Fruit",
+        "Assorted 100% Fruit Juice",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Misc.",
+        "Mozzarella Cheese Stick"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "date": "2026-08-17",
+      "title": "Lunch Entree",
+      "items": [
+        "• Scrambled Eggs w. French Toast Sticks and Bacon🐖",
+        "• Corn Dog",
+        "• Garden Fresh Salad Bar",
+        "With",
+        "Cornbread",
+        "• Sub Bar 🐖",
+        "• Pizza Bar",
+        "Vegetables",
+        "Fresh Garden Salad",
+        "Tater Tots",
+        "Fruit",
+        "Fresh Fruit",
+        "Chilled Fruit",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Condiments"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "title": "Lunch Entree",
+      "items": [
+        "• Chicken Nachos w. White Queso",
+        "• Tenders w. Garlic Toast",
+        "• Garden Fresh Salad Bar",
+        "With",
+        "Fruit Muffin",
+        "• Sub Bar 🐖",
+        "• Pizza Bar",
+        "Vegetables",
+        "Fresh Garden Salad",
+        "Cowboy Beans 🐄",
+        "Fruit",
+        "Fresh Fruit",
+        "Chilled Fruit",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Condiments"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Lunch Entree",
+      "items": [
+        "• Chicken Patty",
+        "With",
+        "Hot Roll",
+        "• Grilled Ham & Cheese Sandwich🐖",
+        "• Garden Fresh Salad Bar",
+        "With Hot Roll",
+        "• Sub Bar 🐖",
+        "• Pizza Bar",
+        "Vegetables",
+        "Mashed Potatoes",
+        "Glazed Carrots",
+        "Fruit",
+        "Fresh Fruit",
+        "Chilled Fruit",
+        "Milk",
+        "1% Milk",
+        "Skim Milk"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Lunch Entree",
+      "items": [
+        "• Cheeseburger🐄",
+        "• Rattlesnake Pasta",
+        "With",
+        "Italian Bread",
+        "• Garden Fresh Salad Bar",
+        "With Italian Bread",
+        "• Sub Bar 🐖",
+        "• Pizza Bar",
+        "Vegetables",
+        "Fresh Garden Salad",
+        "Corn",
+        "Fruit",
+        "Fresh Fruit",
+        "Chilled Fruit",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "title": "Lunch Entree",
+      "items": [
+        "• Mini Meatball Pizza 🐖",
+        "• Hot Dog",
+        "• Garden Fresh Salad Bar",
+        "With",
+        "Focaccia Bread",
+        "• Sub Bar 🐖",
+        "Vegetables",
+        "Fresh Garden Salad",
+        "Fresh Broccoli",
+        "Fruit",
+        "Fresh Fruit",
+        "Chilled Fruit",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Condiments",
+        "Ranch Dressing"
+      ]
+    }
+  ],
   "sync": {
-    "status": "never-run",
-    "message": "The automated menu sync has not run yet."
+    "status": "ok",
+    "message": "Pulled 5 breakfast day(s) and 5 lunch day(s)."
   }
 }
