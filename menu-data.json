@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-20T03:08:37.356Z",
-  "weekStart": "2026-08-17",
-  "weekEnd": "2026-08-21",
+  "generatedAt": "2026-08-22T13:29:54.410Z",
+  "weekStart": "2026-08-24",
+  "weekEnd": "2026-08-28",
   "source": {
     "district": "Riverton USD 404",
     "school": "Riverton Elementary School",
@@ -23,39 +23,133 @@
   },
   "breakfast": [
     {
-      "date": "2026-08-17",
+      "date": "2026-08-24",
       "title": "Choice of",
       "items": [
         "Breakfast Entree",
         "Choice of",
-        "Pancakes",
+        "Egg, Bacon, and Cheese Bagel",
         "Or",
-        "Assorted Cereal + Toast w. Margarine",
+        "Assorted Cereal + Cinnamon Toast",
         "Fruit",
+        "Chilled Fruit",
         "Fresh Fruit",
-        "Assorted 100% Fruit Juice",
         "Milk",
         "1% Milk",
-        "Chocolate Milk",
-        "Condiments",
-        "Jelly PC",
-        "Syrup PC"
+        "Chocolate Milk"
       ],
       "sections": [
         {
           "category": "Breakfast Entree",
           "items": [
             "Choice of",
-            "Pancakes",
+            "Egg, Bacon, and Cheese Bagel",
             "Or",
-            "Assorted Cereal + Toast w. Margarine"
+            "Assorted Cereal + Cinnamon Toast"
           ]
         },
         {
           "category": "Fruit",
           "items": [
-            "Fresh Fruit",
+            "Chilled Fruit",
+            "Fresh Fruit"
+          ]
+        },
+        {
+          "category": "Milk",
+          "items": [
+            "1% Milk",
+            "Chocolate Milk"
+          ]
+        }
+      ],
+      "note": null
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Choice of",
+      "items": [
+        "Breakfast Entree",
+        "Choice of",
+        "Cinnamon Roll",
+        "Or",
+        "Assorted Cereal + Yogurt",
+        "Fruit",
+        "Chilled Fruit",
+        "Assorted 100% Fruit Juice",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk"
+      ],
+      "sections": [
+        {
+          "category": "Breakfast Entree",
+          "items": [
+            "Choice of",
+            "Cinnamon Roll",
+            "Or",
+            "Assorted Cereal + Yogurt"
+          ]
+        },
+        {
+          "category": "Fruit",
+          "items": [
+            "Chilled Fruit",
             "Assorted 100% Fruit Juice"
+          ]
+        },
+        {
+          "category": "Milk",
+          "items": [
+            "1% Milk",
+            "Chocolate Milk"
+          ]
+        }
+      ],
+      "note": null
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Choice of",
+      "items": [
+        "Breakfast Entree",
+        "Choice of",
+        "Cheesy Ham and Egg Casserole + Toast w. Margarine",
+        "Or",
+        "Assorted Cereal + Toast w. Margarine Or",
+        "Waffles",
+        "Vegetables",
+        "Tater Tots",
+        "Fruit",
+        "Chilled Fruit",
+        "Milk",
+        "1% Milk",
+        "Chocolate Milk",
+        "Condiments",
+        "Jelly PC",
+        "Waffle/Pancake Toppings"
+      ],
+      "sections": [
+        {
+          "category": "Breakfast Entree",
+          "items": [
+            "Choice of",
+            "Cheesy Ham and Egg Casserole + Toast w. Margarine",
+            "Or",
+            "Assorted Cereal + Toast w. Margarine Or",
+            "Waffles"
+          ]
+        },
+        {
+          "category": "Vegetables",
+          "items": [
+            "Tater Tots"
+          ]
+        },
+        {
+          "category": "Fruit",
+          "items": [
+            "Chilled Fruit"
           ]
         },
         {
@@ -69,102 +163,6 @@
           "category": "Condiments",
           "items": [
             "Jelly PC",
-            "Syrup PC"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Choice of",
-      "items": [
-        "Breakfast Entree",
-        "Choice of",
-        "Tot N Egg Casserole + Muffin Square",
-        "Or",
-        "Assorted Cereal + Muffin Square",
-        "Fruit",
-        "Chilled Fruit",
-        "Assorted 100% Fruit Juice",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk"
-      ],
-      "sections": [
-        {
-          "category": "Breakfast Entree",
-          "items": [
-            "Choice of",
-            "Tot N Egg Casserole + Muffin Square",
-            "Or",
-            "Assorted Cereal + Muffin Square"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Chilled Fruit",
-            "Assorted 100% Fruit Juice"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-19",
-      "title": "Choice of",
-      "items": [
-        "Breakfast Entree",
-        "Choice of",
-        "Strawberry Shortcake Biscuit",
-        "Or",
-        "Assorted Cereal + Cinnamon Toast",
-        "Waffles",
-        "Fruit",
-        "Chilled Fruit",
-        "Assorted 100% Fruit Juice",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk",
-        "Condiments",
-        "Waffle/Pancake Toppings"
-      ],
-      "sections": [
-        {
-          "category": "Breakfast Entree",
-          "items": [
-            "Choice of",
-            "Strawberry Shortcake Biscuit",
-            "Or",
-            "Assorted Cereal + Cinnamon Toast",
-            "Waffles"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Chilled Fruit",
-            "Assorted 100% Fruit Juice"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
-          ]
-        },
-        {
-          "category": "Condiments",
-          "items": [
             "Waffle/Pancake Toppings"
           ]
         }
@@ -172,12 +170,12 @@
       "note": null
     },
     {
-      "date": "2026-08-20",
+      "date": "2026-08-27",
       "title": "Choice of",
       "items": [
         "Breakfast Entree",
         "Choice of",
-        "Fruit and Yogurt Parfait + Muffin Square",
+        "Western Egg 'N' Bacon Sandwich",
         "Or",
         "Assorted Cereal + Muffin Square",
         "Fruit",
@@ -192,7 +190,7 @@
           "category": "Breakfast Entree",
           "items": [
             "Choice of",
-            "Fruit and Yogurt Parfait + Muffin Square",
+            "Western Egg 'N' Bacon Sandwich",
             "Or",
             "Assorted Cereal + Muffin Square"
           ]
@@ -215,22 +213,20 @@
       "note": null
     },
     {
-      "date": "2026-08-21",
+      "date": "2026-08-28",
       "title": "Choice of",
       "items": [
         "Breakfast Entree",
         "Choice of",
         "Biscuits & Peppered Gravy + Sausage Patty",
         "Or",
-        "Assorted Cereal + Toast w. Margarine",
+        "Assorted Cereal + Cinnamon Toast",
         "Fruit",
         "Chilled Fruit",
         "Assorted 100% Fruit Juice",
         "Milk",
         "1% Milk",
-        "Chocolate Milk",
-        "Condiments",
-        "Jelly PC"
+        "Chocolate Milk"
       ],
       "sections": [
         {
@@ -239,7 +235,7 @@
             "Choice of",
             "Biscuits & Peppered Gravy + Sausage Patty",
             "Or",
-            "Assorted Cereal + Toast w. Margarine"
+            "Assorted Cereal + Cinnamon Toast"
           ]
         },
         {
@@ -255,12 +251,6 @@
             "1% Milk",
             "Chocolate Milk"
           ]
-        },
-        {
-          "category": "Condiments",
-          "items": [
-            "Jelly PC"
-          ]
         }
       ],
       "note": null
@@ -268,16 +258,16 @@
   ],
   "lunch": [
     {
-      "date": "2026-08-17",
-      "title": "Scrambled Eggs w. French Toast Sticks and Bacon",
+      "date": "2026-08-24",
+      "title": "Dumplings",
       "items": [
         "Lunch Entree",
-        "Scrambled Eggs w. French Toast Sticks and Bacon",
+        "Dumplings",
         "Corn Dog",
-        "Chicken Bacon Ranch Salad + Cornbread",
+        "Pizza Munchable",
         "Vegetables",
         "Fresh Garden Salad",
-        "Tater Tots",
+        "French Fries",
         "Fruit",
         "Fresh Fruit",
         "Chilled Fruit",
@@ -285,23 +275,22 @@
         "1% Milk",
         "Chocolate Milk",
         "Condiments",
-        "Ketchup",
-        "Syrup PC"
+        "Ketchup"
       ],
       "sections": [
         {
           "category": "Lunch Entree",
           "items": [
-            "Scrambled Eggs w. French Toast Sticks and Bacon",
+            "Dumplings",
             "Corn Dog",
-            "Chicken Bacon Ranch Salad + Cornbread"
+            "Pizza Munchable"
           ]
         },
         {
           "category": "Vegetables",
           "items": [
             "Fresh Garden Salad",
-            "Tater Tots"
+            "French Fries"
           ]
         },
         {
@@ -321,48 +310,46 @@
         {
           "category": "Condiments",
           "items": [
-            "Ketchup",
-            "Syrup PC"
+            "Ketchup"
           ]
         }
       ],
       "note": null
     },
     {
-      "date": "2026-08-18",
-      "title": "Chicken Nachos w. White Queso",
+      "date": "2026-08-25",
+      "title": "Crispito w. Nachos",
       "items": [
         "Lunch Entree",
-        "Chicken Nachos w. White Queso",
+        "Crispito w. Nachos",
         "Tenders w. Garlic Toast",
-        "Strawberry Salad + Fruit Muffin",
+        "Nacho Munchable",
         "Vegetables",
         "Fresh Garden Salad",
-        "Cowboy Beans",
+        "Baked Beans",
         "Fruit",
         "Fresh Fruit",
         "Chilled Fruit",
         "Milk",
-        "1% Milk",
         "Chocolate Milk",
+        "1% Milk",
         "Condiments",
-        "Mexican Condiments",
         "Condiments - Breaded Chicken"
       ],
       "sections": [
         {
           "category": "Lunch Entree",
           "items": [
-            "Chicken Nachos w. White Queso",
+            "Crispito w. Nachos",
             "Tenders w. Garlic Toast",
-            "Strawberry Salad + Fruit Muffin"
+            "Nacho Munchable"
           ]
         },
         {
           "category": "Vegetables",
           "items": [
             "Fresh Garden Salad",
-            "Cowboy Beans"
+            "Baked Beans"
           ]
         },
         {
@@ -375,14 +362,13 @@
         {
           "category": "Milk",
           "items": [
-            "1% Milk",
-            "Chocolate Milk"
+            "Chocolate Milk",
+            "1% Milk"
           ]
         },
         {
           "category": "Condiments",
           "items": [
-            "Mexican Condiments",
             "Condiments - Breaded Chicken"
           ]
         }
@@ -390,23 +376,22 @@
       "note": null
     },
     {
-      "date": "2026-08-19",
+      "date": "2026-08-26",
       "title": "Chicken Patty + Hot Roll",
       "items": [
         "Lunch Entree",
         "Chicken Patty + Hot Roll",
-        "Grilled Ham & Cheese Sandwich",
-        "Watermelon Salad",
+        "Three Cheese Grilled Cheese",
+        "Mini Pancake PBJ Munchable + Yogurt",
         "Vegetables",
         "Mashed Potatoes",
-        "Glazed Carrots",
+        "Corn",
         "Fruit",
         "Fresh Fruit",
         "Chilled Fruit",
         "Milk",
-        "1% Milk",
-        "Skim Milk",
         "Chocolate Milk",
+        "1% Milk",
         "Condiments",
         "Gravy",
         "Ketchup",
@@ -417,15 +402,15 @@
           "category": "Lunch Entree",
           "items": [
             "Chicken Patty + Hot Roll",
-            "Grilled Ham & Cheese Sandwich",
-            "Watermelon Salad"
+            "Three Cheese Grilled Cheese",
+            "Mini Pancake PBJ Munchable + Yogurt"
           ]
         },
         {
           "category": "Vegetables",
           "items": [
             "Mashed Potatoes",
-            "Glazed Carrots"
+            "Corn"
           ]
         },
         {
@@ -438,9 +423,8 @@
         {
           "category": "Milk",
           "items": [
-            "1% Milk",
-            "Skim Milk",
-            "Chocolate Milk"
+            "Chocolate Milk",
+            "1% Milk"
           ]
         },
         {
@@ -455,16 +439,16 @@
       "note": null
     },
     {
-      "date": "2026-08-20",
+      "date": "2026-08-27",
       "title": "Cheeseburger",
       "items": [
         "Lunch Entree",
         "Cheeseburger",
-        "Rattlesnake Pasta + Italian Bread",
-        "BLTE Salad + Italian Bread",
+        "Chicken Alfredo + Italian Bread",
+        "Turkey Club Sub",
         "Vegetables",
         "Fresh Garden Salad",
-        "Corn",
+        "Cheesy Cauliflower Popcorn",
         "Fruit",
         "Fresh Fruit",
         "Chilled Fruit",
@@ -472,6 +456,7 @@
         "1% Milk",
         "Chocolate Milk",
         "Condiments",
+        "Cold Sandwich Condiments",
         "Burger/Chicken Sandwich Condiments"
       ],
       "sections": [
@@ -479,15 +464,15 @@
           "category": "Lunch Entree",
           "items": [
             "Cheeseburger",
-            "Rattlesnake Pasta + Italian Bread",
-            "BLTE Salad + Italian Bread"
+            "Chicken Alfredo + Italian Bread",
+            "Turkey Club Sub"
           ]
         },
         {
           "category": "Vegetables",
           "items": [
             "Fresh Garden Salad",
-            "Corn"
+            "Cheesy Cauliflower Popcorn"
           ]
         },
         {
@@ -507,6 +492,7 @@
         {
           "category": "Condiments",
           "items": [
+            "Cold Sandwich Condiments",
             "Burger/Chicken Sandwich Condiments"
           ]
         }
@@ -514,22 +500,22 @@
       "note": null
     },
     {
-      "date": "2026-08-21",
-      "title": "Mini Meatball Pizza",
+      "date": "2026-08-28",
+      "title": "Sausage Pizza",
       "items": [
         "Lunch Entree",
-        "Mini Meatball Pizza",
-        "Hot Dog",
-        "Caesar Salad + Focaccia Bread",
+        "Sausage Pizza",
+        "BBQ Bacon Wrapped Hot Dog",
+        "Popcorn Chicken Munchable",
         "Vegetables",
         "Fresh Garden Salad",
-        "Fresh Broccoli",
+        "Baby Carrots",
         "Fruit",
         "Fresh Fruit",
         "Chilled Fruit",
         "Milk",
-        "1% Milk",
         "Chocolate Milk",
+        "1% Milk",
         "Condiments",
         "Ranch Dressing",
         "Hot Dog Condiments"
@@ -538,16 +524,16 @@
         {
           "category": "Lunch Entree",
           "items": [
-            "Mini Meatball Pizza",
-            "Hot Dog",
-            "Caesar Salad + Focaccia Bread"
+            "Sausage Pizza",
+            "BBQ Bacon Wrapped Hot Dog",
+            "Popcorn Chicken Munchable"
           ]
         },
         {
           "category": "Vegetables",
           "items": [
             "Fresh Garden Salad",
-            "Fresh Broccoli"
+            "Baby Carrots"
           ]
         },
         {
@@ -560,8 +546,8 @@
         {
           "category": "Milk",
           "items": [
-            "1% Milk",
-            "Chocolate Milk"
+            "Chocolate Milk",
+            "1% Milk"
           ]
         },
         {
