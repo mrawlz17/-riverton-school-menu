@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T13:29:54.410Z",
-  "weekStart": "2026-08-24",
-  "weekEnd": "2026-08-28",
+  "generatedAt": "2026-08-29T16:58:30.409Z",
+  "weekStart": "2026-08-31",
+  "weekEnd": "2026-09-04",
   "source": {
     "district": "Riverton USD 404",
     "school": "Riverton Elementary School",
@@ -23,72 +23,60 @@
   },
   "breakfast": [
     {
-      "date": "2026-08-24",
+      "date": "2026-08-31",
       "title": "Choice of",
       "items": [
         "Breakfast Entree",
         "Choice of",
-        "Egg, Bacon, and Cheese Bagel",
+        "Pancake Sausage Griddle",
         "Or",
-        "Assorted Cereal + Cinnamon Toast",
-        "Fruit",
-        "Chilled Fruit",
-        "Fresh Fruit",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk"
-      ],
-      "sections": [
-        {
-          "category": "Breakfast Entree",
-          "items": [
-            "Choice of",
-            "Egg, Bacon, and Cheese Bagel",
-            "Or",
-            "Assorted Cereal + Cinnamon Toast"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Chilled Fruit",
-            "Fresh Fruit"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-25",
-      "title": "Choice of",
-      "items": [
-        "Breakfast Entree",
-        "Choice of",
-        "Cinnamon Roll",
-        "Or",
-        "Assorted Cereal + Yogurt",
+        "Assorted Cereal + Toast w. Margarine",
         "Fruit",
         "Chilled Fruit",
         "Assorted 100% Fruit Juice",
         "Milk",
         "1% Milk",
-        "Chocolate Milk"
+        "Chocolate Milk",
+        "Condiments",
+        "Jelly PC",
+        "In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, religion, sex, disability, age, marital status, family/parental status, income derived from a public assistance program, political beliefs, or reprisal or retaliation for prior civil rights activity, in any program or activity conducted or funded by USDA (not all bases apply to all programs). Remedies and complaint filing deadlines vary by program or incident.",
+        "Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the State or local Agency that administers the program or contact USDA through the Telecommunications Relay Service at 711 (voice and TTY). Additionally, program information may be made available in languages other than English.",
+        "To file a program discrimination complaint, complete the USDA Program Discrimination Complaint Form, AD-3027, found online at How to File a Program Discrimination Complaint and at any USDA office or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by:",
+        "mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Mail Stop 9410, Washington, D.C. 20250-9410;",
+        "fax: (202) 690-7442; or",
+        "email: program.intake@usda.gov.",
+        "USDA is an equal opportunity provider, employer, and lender.",
+        "Powered By Health-e Pro",
+        "Terms of Service | Privacy Policy | Accessibility | 2026",
+        "Riverton USD 404",
+        "Box 290, Riverton, Kansas, 66770 — 620-848-3386 Ext 149",
+        "School",
+        "Riverton K-12",
+        "Menu",
+        "August through September 2026 K-12 Breakfast",
+        "View",
+        "August 2026",
+        "Filter Allergens",
+        "Free & Reduced-Price Meals Application",
+        "Join Our Team!",
+        "Signature Selections",
+        "Combo Cravings Offered for grades 9-12",
+        "Sub Hub Offered for grades 4-12",
+        "Greens & Things",
+        "Daily Fruit and Veggie Bar",
+        "Second Chance Breakfast Offered for grades 6-12",
+        "Visit Opaa! On Facebook",
+        "Shawna Carver, Director of Nutrition Services",
+        "Email: sandrews@opaafood.com"
       ],
       "sections": [
         {
           "category": "Breakfast Entree",
           "items": [
             "Choice of",
-            "Cinnamon Roll",
+            "Pancake Sausage Griddle",
             "Or",
-            "Assorted Cereal + Yogurt"
+            "Assorted Cereal + Toast w. Margarine"
           ]
         },
         {
@@ -96,60 +84,6 @@
           "items": [
             "Chilled Fruit",
             "Assorted 100% Fruit Juice"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Choice of",
-      "items": [
-        "Breakfast Entree",
-        "Choice of",
-        "Cheesy Ham and Egg Casserole + Toast w. Margarine",
-        "Or",
-        "Assorted Cereal + Toast w. Margarine Or",
-        "Waffles",
-        "Vegetables",
-        "Tater Tots",
-        "Fruit",
-        "Chilled Fruit",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk",
-        "Condiments",
-        "Jelly PC",
-        "Waffle/Pancake Toppings"
-      ],
-      "sections": [
-        {
-          "category": "Breakfast Entree",
-          "items": [
-            "Choice of",
-            "Cheesy Ham and Egg Casserole + Toast w. Margarine",
-            "Or",
-            "Assorted Cereal + Toast w. Margarine Or",
-            "Waffles"
-          ]
-        },
-        {
-          "category": "Vegetables",
-          "items": [
-            "Tater Tots"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Chilled Fruit"
           ]
         },
         {
@@ -163,93 +97,35 @@
           "category": "Condiments",
           "items": [
             "Jelly PC",
-            "Waffle/Pancake Toppings"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Choice of",
-      "items": [
-        "Breakfast Entree",
-        "Choice of",
-        "Western Egg 'N' Bacon Sandwich",
-        "Or",
-        "Assorted Cereal + Muffin Square",
-        "Fruit",
-        "Chilled Fruit",
-        "Assorted 100% Fruit Juice",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk"
-      ],
-      "sections": [
-        {
-          "category": "Breakfast Entree",
-          "items": [
-            "Choice of",
-            "Western Egg 'N' Bacon Sandwich",
-            "Or",
-            "Assorted Cereal + Muffin Square"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Chilled Fruit",
-            "Assorted 100% Fruit Juice"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-28",
-      "title": "Choice of",
-      "items": [
-        "Breakfast Entree",
-        "Choice of",
-        "Biscuits & Peppered Gravy + Sausage Patty",
-        "Or",
-        "Assorted Cereal + Cinnamon Toast",
-        "Fruit",
-        "Chilled Fruit",
-        "Assorted 100% Fruit Juice",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk"
-      ],
-      "sections": [
-        {
-          "category": "Breakfast Entree",
-          "items": [
-            "Choice of",
-            "Biscuits & Peppered Gravy + Sausage Patty",
-            "Or",
-            "Assorted Cereal + Cinnamon Toast"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Chilled Fruit",
-            "Assorted 100% Fruit Juice"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
+            "In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, religion, sex, disability, age, marital status, family/parental status, income derived from a public assistance program, political beliefs, or reprisal or retaliation for prior civil rights activity, in any program or activity conducted or funded by USDA (not all bases apply to all programs). Remedies and complaint filing deadlines vary by program or incident.",
+            "Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the State or local Agency that administers the program or contact USDA through the Telecommunications Relay Service at 711 (voice and TTY). Additionally, program information may be made available in languages other than English.",
+            "To file a program discrimination complaint, complete the USDA Program Discrimination Complaint Form, AD-3027, found online at How to File a Program Discrimination Complaint and at any USDA office or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by:",
+            "mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Mail Stop 9410, Washington, D.C. 20250-9410;",
+            "fax: (202) 690-7442; or",
+            "email: program.intake@usda.gov.",
+            "USDA is an equal opportunity provider, employer, and lender.",
+            "Powered By Health-e Pro",
+            "Terms of Service | Privacy Policy | Accessibility | 2026",
+            "Riverton USD 404",
+            "Box 290, Riverton, Kansas, 66770 — 620-848-3386 Ext 149",
+            "School",
+            "Riverton K-12",
+            "Menu",
+            "August through September 2026 K-12 Breakfast",
+            "View",
+            "August 2026",
+            "Filter Allergens",
+            "Free & Reduced-Price Meals Application",
+            "Join Our Team!",
+            "Signature Selections",
+            "Combo Cravings Offered for grades 9-12",
+            "Sub Hub Offered for grades 4-12",
+            "Greens & Things",
+            "Daily Fruit and Veggie Bar",
+            "Second Chance Breakfast Offered for grades 6-12",
+            "Visit Opaa! On Facebook",
+            "Shawna Carver, Director of Nutrition Services",
+            "Email: sandrews@opaafood.com"
           ]
         }
       ],
@@ -258,16 +134,16 @@
   ],
   "lunch": [
     {
-      "date": "2026-08-24",
-      "title": "Dumplings",
+      "date": "2026-08-31",
+      "title": "Nuggets + Italian Bread",
       "items": [
         "Lunch Entree",
-        "Dumplings",
+        "Nuggets + Italian Bread",
         "Corn Dog",
-        "Pizza Munchable",
+        "Chef Salad + Italian Bread",
         "Vegetables",
         "Fresh Garden Salad",
-        "French Fries",
+        "Steamed Broccoli",
         "Fruit",
         "Fresh Fruit",
         "Chilled Fruit",
@@ -275,204 +151,290 @@
         "1% Milk",
         "Chocolate Milk",
         "Condiments",
-        "Ketchup"
-      ],
-      "sections": [
-        {
-          "category": "Lunch Entree",
-          "items": [
-            "Dumplings",
-            "Corn Dog",
-            "Pizza Munchable"
-          ]
-        },
-        {
-          "category": "Vegetables",
-          "items": [
-            "Fresh Garden Salad",
-            "French Fries"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Fresh Fruit",
-            "Chilled Fruit"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "1% Milk",
-            "Chocolate Milk"
-          ]
-        },
-        {
-          "category": "Condiments",
-          "items": [
-            "Ketchup"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-25",
-      "title": "Crispito w. Nachos",
-      "items": [
-        "Lunch Entree",
-        "Crispito w. Nachos",
-        "Tenders w. Garlic Toast",
-        "Nacho Munchable",
-        "Vegetables",
-        "Fresh Garden Salad",
-        "Baked Beans",
-        "Fruit",
-        "Fresh Fruit",
-        "Chilled Fruit",
-        "Milk",
-        "Chocolate Milk",
-        "1% Milk",
-        "Condiments",
-        "Condiments - Breaded Chicken"
-      ],
-      "sections": [
-        {
-          "category": "Lunch Entree",
-          "items": [
-            "Crispito w. Nachos",
-            "Tenders w. Garlic Toast",
-            "Nacho Munchable"
-          ]
-        },
-        {
-          "category": "Vegetables",
-          "items": [
-            "Fresh Garden Salad",
-            "Baked Beans"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Fresh Fruit",
-            "Chilled Fruit"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "Chocolate Milk",
-            "1% Milk"
-          ]
-        },
-        {
-          "category": "Condiments",
-          "items": [
-            "Condiments - Breaded Chicken"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Chicken Patty + Hot Roll",
-      "items": [
-        "Lunch Entree",
-        "Chicken Patty + Hot Roll",
-        "Three Cheese Grilled Cheese",
-        "Mini Pancake PBJ Munchable + Yogurt",
-        "Vegetables",
-        "Mashed Potatoes",
-        "Corn",
-        "Fruit",
-        "Fresh Fruit",
-        "Chilled Fruit",
-        "Milk",
-        "Chocolate Milk",
-        "1% Milk",
-        "Condiments",
-        "Gravy",
         "Ketchup",
-        "BBQ Sauce"
+        "Mustard",
+        "BBQ Sauce",
+        "In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, religion, sex, disability, age, marital status, family/parental status, income derived from a public assistance program, political beliefs, or reprisal or retaliation for prior civil rights activity, in any program or activity conducted or funded by USDA (not all bases apply to all programs). Remedies and complaint filing deadlines vary by program or incident.",
+        "Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the State or local Agency that administers the program or contact USDA through the Telecommunications Relay Service at 711 (voice and TTY). Additionally, program information may be made available in languages other than English.",
+        "To file a program discrimination complaint, complete the USDA Program Discrimination Complaint Form, AD-3027, found online at How to File a Program Discrimination Complaint and at any USDA office or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by:",
+        "mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Mail Stop 9410, Washington, D.C. 20250-9410;",
+        "fax: (202) 690-7442; or",
+        "email: program.intake@usda.gov.",
+        "USDA is an equal opportunity provider, employer, and lender.",
+        "Powered By Health-e Pro",
+        "Terms of Service | Privacy Policy | Accessibility | 2026",
+        "Riverton USD 404",
+        "Box 290, Riverton, Kansas, 66770 — 620-848-3386 Ext 149",
+        "School",
+        "Riverton K-12",
+        "Menu",
+        "August through September 2026 K-3 Lunch",
+        "View",
+        "August 2026",
+        "Filter Allergens",
+        "Aymara",
+        "Azerbaijani",
+        "Balinese",
+        "Baluchi",
+        "Bambara",
+        "Baoulé",
+        "Bashkir",
+        "Basque",
+        "Batak Karo",
+        "Batak Simalungun",
+        "Batak Toba",
+        "Belarusian",
+        "Bemba",
+        "Bengali",
+        "Betawi",
+        "Bhojpuri",
+        "Bikol",
+        "Bosnian",
+        "Breton",
+        "Bulgarian",
+        "Buryat",
+        "Cantonese",
+        "Catalan",
+        "Cebuano",
+        "Chamorro",
+        "Chechen",
+        "Chichewa",
+        "Chinese (Simplified)",
+        "Chinese (Traditional)",
+        "Chuukese",
+        "Chuvash",
+        "Corsican",
+        "Crimean Tatar (Cyrillic)",
+        "Crimean Tatar (Latin)",
+        "Croatian",
+        "Czech",
+        "Danish",
+        "Dari",
+        "Dhivehi",
+        "Dinka",
+        "Dogri",
+        "Dombe",
+        "Dutch",
+        "Dyula",
+        "Dzongkha",
+        "Esperanto",
+        "Estonian",
+        "Ewe",
+        "Faroese",
+        "Fijian",
+        "Filipino",
+        "Finnish",
+        "Fon",
+        "French",
+        "French (Canada)",
+        "Frisian",
+        "Friulian",
+        "Fulani",
+        "Ga",
+        "Galician",
+        "Georgian",
+        "German",
+        "Greek",
+        "Guarani",
+        "Gujarati",
+        "Haitian Creole",
+        "Hakha Chin",
+        "Hausa",
+        "Hawaiian",
+        "Hebrew",
+        "Hiligaynon",
+        "Hindi",
+        "Hmong",
+        "Hungarian",
+        "Hunsrik",
+        "Iban",
+        "Icelandic",
+        "Igbo",
+        "Ilocano",
+        "Indonesian",
+        "Inuktut (Latin)",
+        "Inuktut (Syllabics)",
+        "Irish",
+        "Italian",
+        "Jamaican Patois",
+        "Japanese",
+        "Javanese",
+        "Jingpo",
+        "Kalaallisut",
+        "Kannada",
+        "Kanuri",
+        "Kapampangan",
+        "Kazakh",
+        "Khasi",
+        "Khmer",
+        "Kiga",
+        "Kikongo",
+        "Kinyarwanda",
+        "Kituba",
+        "Kokborok",
+        "Komi",
+        "Konkani",
+        "Korean",
+        "Krio",
+        "Kurdish (Kurmanji)",
+        "Kurdish (Sorani)",
+        "Kyrgyz",
+        "Lao",
+        "Latgalian",
+        "Latin",
+        "Latvian",
+        "Ligurian",
+        "Limburgish",
+        "Lingala",
+        "Lithuanian",
+        "Lombard",
+        "Luganda",
+        "Luo",
+        "Luxembourgish",
+        "Macedonian",
+        "Madurese",
+        "Maithili",
+        "Makassar",
+        "Malagasy",
+        "Malay",
+        "Malay (Jawi)",
+        "Malayalam",
+        "Maltese",
+        "Mam",
+        "Manx",
+        "Maori",
+        "Marathi",
+        "Marshallese",
+        "Marwadi",
+        "Mauritian Creole",
+        "Meadow Mari",
+        "Meiteilon (Manipuri)",
+        "Minang",
+        "Mizo",
+        "Mongolian",
+        "Myanmar (Burmese)",
+        "Nahuatl (Eastern Huasteca)",
+        "Ndau",
+        "Ndebele (South)",
+        "Nepalbhasa (Newari)",
+        "Nepali",
+        "NKo",
+        "Norwegian",
+        "Nuer",
+        "Occitan",
+        "Odia (Oriya)",
+        "Oromo",
+        "Ossetian",
+        "Pangasinan",
+        "Papiamento",
+        "Pashto",
+        "Persian",
+        "Polish",
+        "Portuguese (Brazil)",
+        "Portuguese (Portugal)",
+        "Punjabi (Gurmukhi)",
+        "Punjabi (Shahmukhi)",
+        "Quechua",
+        "Qʼeqchiʼ",
+        "Romani",
+        "Romanian",
+        "Rundi",
+        "Russian",
+        "Sami (North)",
+        "Samoan",
+        "Sango",
+        "Sanskrit",
+        "Santali (Latin)",
+        "Santali (Ol Chiki)",
+        "Scots Gaelic",
+        "Sepedi",
+        "Serbian",
+        "Sesotho",
+        "Seychellois Creole",
+        "Shan",
+        "Shona",
+        "Sicilian",
+        "Silesian",
+        "Sindhi",
+        "Sinhala",
+        "Slovak",
+        "Slovenian",
+        "Somali",
+        "Spanish",
+        "Sundanese",
+        "Susu",
+        "Swahili",
+        "Swati",
+        "Swedish",
+        "Tahitian",
+        "Tajik",
+        "Tamazight",
+        "Tamazight (Tifinagh)",
+        "Tamil",
+        "Tatar",
+        "Telugu",
+        "Tetum",
+        "Thai",
+        "Tibetan",
+        "Tigrinya",
+        "Tiv",
+        "Tok Pisin",
+        "Tongan",
+        "Tshiluba",
+        "Tsonga",
+        "Tswana",
+        "Tulu",
+        "Tumbuka",
+        "Turkish",
+        "Turkmen",
+        "Tuvan",
+        "Twi",
+        "Udmurt",
+        "Ukrainian",
+        "Urdu",
+        "Uyghur",
+        "Uzbek",
+        "Venda",
+        "Venetian",
+        "Vietnamese",
+        "Waray",
+        "Welsh",
+        "Wolof",
+        "Xhosa",
+        "Yakut",
+        "Yiddish",
+        "Yoruba",
+        "Yucatec Maya",
+        "Zapotec",
+        "Zulu",
+        "Powered by",
+        "Translate",
+        "Free & Reduced-Price Meals Application",
+        "Join Our Team!",
+        "Signature Selections",
+        "Combo Cravings Offered for grades 9-12",
+        "Sub Hub Offered for grades 4-12",
+        "Greens & Things",
+        "Daily Fruit and Veggie Bar",
+        "Second Chance Breakfast Offered for grades 6-12",
+        "Visit Opaa! On Facebook",
+        "Shawna Carver, Director of Nutrition Services",
+        "Email: sandrews@opaafood.com"
       ],
       "sections": [
         {
           "category": "Lunch Entree",
           "items": [
-            "Chicken Patty + Hot Roll",
-            "Three Cheese Grilled Cheese",
-            "Mini Pancake PBJ Munchable + Yogurt"
-          ]
-        },
-        {
-          "category": "Vegetables",
-          "items": [
-            "Mashed Potatoes",
-            "Corn"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Fresh Fruit",
-            "Chilled Fruit"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "Chocolate Milk",
-            "1% Milk"
-          ]
-        },
-        {
-          "category": "Condiments",
-          "items": [
-            "Gravy",
-            "Ketchup",
-            "BBQ Sauce"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Cheeseburger",
-      "items": [
-        "Lunch Entree",
-        "Cheeseburger",
-        "Chicken Alfredo + Italian Bread",
-        "Turkey Club Sub",
-        "Vegetables",
-        "Fresh Garden Salad",
-        "Cheesy Cauliflower Popcorn",
-        "Fruit",
-        "Fresh Fruit",
-        "Chilled Fruit",
-        "Milk",
-        "1% Milk",
-        "Chocolate Milk",
-        "Condiments",
-        "Cold Sandwich Condiments",
-        "Burger/Chicken Sandwich Condiments"
-      ],
-      "sections": [
-        {
-          "category": "Lunch Entree",
-          "items": [
-            "Cheeseburger",
-            "Chicken Alfredo + Italian Bread",
-            "Turkey Club Sub"
+            "Nuggets + Italian Bread",
+            "Corn Dog",
+            "Chef Salad + Italian Bread"
           ]
         },
         {
           "category": "Vegetables",
           "items": [
             "Fresh Garden Salad",
-            "Cheesy Cauliflower Popcorn"
+            "Steamed Broccoli"
           ]
         },
         {
@@ -492,69 +454,275 @@
         {
           "category": "Condiments",
           "items": [
-            "Cold Sandwich Condiments",
-            "Burger/Chicken Sandwich Condiments"
-          ]
-        }
-      ],
-      "note": null
-    },
-    {
-      "date": "2026-08-28",
-      "title": "Sausage Pizza",
-      "items": [
-        "Lunch Entree",
-        "Sausage Pizza",
-        "BBQ Bacon Wrapped Hot Dog",
-        "Popcorn Chicken Munchable",
-        "Vegetables",
-        "Fresh Garden Salad",
-        "Baby Carrots",
-        "Fruit",
-        "Fresh Fruit",
-        "Chilled Fruit",
-        "Milk",
-        "Chocolate Milk",
-        "1% Milk",
-        "Condiments",
-        "Ranch Dressing",
-        "Hot Dog Condiments"
-      ],
-      "sections": [
-        {
-          "category": "Lunch Entree",
-          "items": [
-            "Sausage Pizza",
-            "BBQ Bacon Wrapped Hot Dog",
-            "Popcorn Chicken Munchable"
-          ]
-        },
-        {
-          "category": "Vegetables",
-          "items": [
-            "Fresh Garden Salad",
-            "Baby Carrots"
-          ]
-        },
-        {
-          "category": "Fruit",
-          "items": [
-            "Fresh Fruit",
-            "Chilled Fruit"
-          ]
-        },
-        {
-          "category": "Milk",
-          "items": [
-            "Chocolate Milk",
-            "1% Milk"
-          ]
-        },
-        {
-          "category": "Condiments",
-          "items": [
-            "Ranch Dressing",
-            "Hot Dog Condiments"
+            "Ketchup",
+            "Mustard",
+            "BBQ Sauce",
+            "In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, religion, sex, disability, age, marital status, family/parental status, income derived from a public assistance program, political beliefs, or reprisal or retaliation for prior civil rights activity, in any program or activity conducted or funded by USDA (not all bases apply to all programs). Remedies and complaint filing deadlines vary by program or incident.",
+            "Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the State or local Agency that administers the program or contact USDA through the Telecommunications Relay Service at 711 (voice and TTY). Additionally, program information may be made available in languages other than English.",
+            "To file a program discrimination complaint, complete the USDA Program Discrimination Complaint Form, AD-3027, found online at How to File a Program Discrimination Complaint and at any USDA office or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by:",
+            "mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Mail Stop 9410, Washington, D.C. 20250-9410;",
+            "fax: (202) 690-7442; or",
+            "email: program.intake@usda.gov.",
+            "USDA is an equal opportunity provider, employer, and lender.",
+            "Powered By Health-e Pro",
+            "Terms of Service | Privacy Policy | Accessibility | 2026",
+            "Riverton USD 404",
+            "Box 290, Riverton, Kansas, 66770 — 620-848-3386 Ext 149",
+            "School",
+            "Riverton K-12",
+            "Menu",
+            "August through September 2026 K-3 Lunch",
+            "View",
+            "August 2026",
+            "Filter Allergens",
+            "Aymara",
+            "Azerbaijani",
+            "Balinese",
+            "Baluchi",
+            "Bambara",
+            "Baoulé",
+            "Bashkir",
+            "Basque",
+            "Batak Karo",
+            "Batak Simalungun",
+            "Batak Toba",
+            "Belarusian",
+            "Bemba",
+            "Bengali",
+            "Betawi",
+            "Bhojpuri",
+            "Bikol",
+            "Bosnian",
+            "Breton",
+            "Bulgarian",
+            "Buryat",
+            "Cantonese",
+            "Catalan",
+            "Cebuano",
+            "Chamorro",
+            "Chechen",
+            "Chichewa",
+            "Chinese (Simplified)",
+            "Chinese (Traditional)",
+            "Chuukese",
+            "Chuvash",
+            "Corsican",
+            "Crimean Tatar (Cyrillic)",
+            "Crimean Tatar (Latin)",
+            "Croatian",
+            "Czech",
+            "Danish",
+            "Dari",
+            "Dhivehi",
+            "Dinka",
+            "Dogri",
+            "Dombe",
+            "Dutch",
+            "Dyula",
+            "Dzongkha",
+            "Esperanto",
+            "Estonian",
+            "Ewe",
+            "Faroese",
+            "Fijian",
+            "Filipino",
+            "Finnish",
+            "Fon",
+            "French",
+            "French (Canada)",
+            "Frisian",
+            "Friulian",
+            "Fulani",
+            "Ga",
+            "Galician",
+            "Georgian",
+            "German",
+            "Greek",
+            "Guarani",
+            "Gujarati",
+            "Haitian Creole",
+            "Hakha Chin",
+            "Hausa",
+            "Hawaiian",
+            "Hebrew",
+            "Hiligaynon",
+            "Hindi",
+            "Hmong",
+            "Hungarian",
+            "Hunsrik",
+            "Iban",
+            "Icelandic",
+            "Igbo",
+            "Ilocano",
+            "Indonesian",
+            "Inuktut (Latin)",
+            "Inuktut (Syllabics)",
+            "Irish",
+            "Italian",
+            "Jamaican Patois",
+            "Japanese",
+            "Javanese",
+            "Jingpo",
+            "Kalaallisut",
+            "Kannada",
+            "Kanuri",
+            "Kapampangan",
+            "Kazakh",
+            "Khasi",
+            "Khmer",
+            "Kiga",
+            "Kikongo",
+            "Kinyarwanda",
+            "Kituba",
+            "Kokborok",
+            "Komi",
+            "Konkani",
+            "Korean",
+            "Krio",
+            "Kurdish (Kurmanji)",
+            "Kurdish (Sorani)",
+            "Kyrgyz",
+            "Lao",
+            "Latgalian",
+            "Latin",
+            "Latvian",
+            "Ligurian",
+            "Limburgish",
+            "Lingala",
+            "Lithuanian",
+            "Lombard",
+            "Luganda",
+            "Luo",
+            "Luxembourgish",
+            "Macedonian",
+            "Madurese",
+            "Maithili",
+            "Makassar",
+            "Malagasy",
+            "Malay",
+            "Malay (Jawi)",
+            "Malayalam",
+            "Maltese",
+            "Mam",
+            "Manx",
+            "Maori",
+            "Marathi",
+            "Marshallese",
+            "Marwadi",
+            "Mauritian Creole",
+            "Meadow Mari",
+            "Meiteilon (Manipuri)",
+            "Minang",
+            "Mizo",
+            "Mongolian",
+            "Myanmar (Burmese)",
+            "Nahuatl (Eastern Huasteca)",
+            "Ndau",
+            "Ndebele (South)",
+            "Nepalbhasa (Newari)",
+            "Nepali",
+            "NKo",
+            "Norwegian",
+            "Nuer",
+            "Occitan",
+            "Odia (Oriya)",
+            "Oromo",
+            "Ossetian",
+            "Pangasinan",
+            "Papiamento",
+            "Pashto",
+            "Persian",
+            "Polish",
+            "Portuguese (Brazil)",
+            "Portuguese (Portugal)",
+            "Punjabi (Gurmukhi)",
+            "Punjabi (Shahmukhi)",
+            "Quechua",
+            "Qʼeqchiʼ",
+            "Romani",
+            "Romanian",
+            "Rundi",
+            "Russian",
+            "Sami (North)",
+            "Samoan",
+            "Sango",
+            "Sanskrit",
+            "Santali (Latin)",
+            "Santali (Ol Chiki)",
+            "Scots Gaelic",
+            "Sepedi",
+            "Serbian",
+            "Sesotho",
+            "Seychellois Creole",
+            "Shan",
+            "Shona",
+            "Sicilian",
+            "Silesian",
+            "Sindhi",
+            "Sinhala",
+            "Slovak",
+            "Slovenian",
+            "Somali",
+            "Spanish",
+            "Sundanese",
+            "Susu",
+            "Swahili",
+            "Swati",
+            "Swedish",
+            "Tahitian",
+            "Tajik",
+            "Tamazight",
+            "Tamazight (Tifinagh)",
+            "Tamil",
+            "Tatar",
+            "Telugu",
+            "Tetum",
+            "Thai",
+            "Tibetan",
+            "Tigrinya",
+            "Tiv",
+            "Tok Pisin",
+            "Tongan",
+            "Tshiluba",
+            "Tsonga",
+            "Tswana",
+            "Tulu",
+            "Tumbuka",
+            "Turkish",
+            "Turkmen",
+            "Tuvan",
+            "Twi",
+            "Udmurt",
+            "Ukrainian",
+            "Urdu",
+            "Uyghur",
+            "Uzbek",
+            "Venda",
+            "Venetian",
+            "Vietnamese",
+            "Waray",
+            "Welsh",
+            "Wolof",
+            "Xhosa",
+            "Yakut",
+            "Yiddish",
+            "Yoruba",
+            "Yucatec Maya",
+            "Zapotec",
+            "Zulu",
+            "Powered by",
+            "Translate",
+            "Free & Reduced-Price Meals Application",
+            "Join Our Team!",
+            "Signature Selections",
+            "Combo Cravings Offered for grades 9-12",
+            "Sub Hub Offered for grades 4-12",
+            "Greens & Things",
+            "Daily Fruit and Veggie Bar",
+            "Second Chance Breakfast Offered for grades 6-12",
+            "Visit Opaa! On Facebook",
+            "Shawna Carver, Director of Nutrition Services",
+            "Email: sandrews@opaafood.com"
           ]
         }
       ],
@@ -563,6 +731,6 @@
   ],
   "sync": {
     "status": "ok",
-    "message": "Pulled 5 breakfast day(s) and 5 lunch day(s)."
+    "message": "Pulled 1 breakfast day(s) and 1 lunch day(s)."
   }
 }
